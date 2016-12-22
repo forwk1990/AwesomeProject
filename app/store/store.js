@@ -4,8 +4,8 @@
 
 import loggerMiddleware from '../middleware/logger.js'
 import thunkMiddleware from 'redux-thunk'
-import rootReducer from '../reducers/rootReducer.js'
-import {compose,createStore,applyMiddleware} from 'redux'
+import rootReducer from '../reducers'
+import {createStore,applyMiddleware} from 'redux'
 
 
 // 扩展createStore

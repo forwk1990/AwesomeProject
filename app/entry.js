@@ -1,12 +1,22 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 import store from './store/store';
+import App from './app';
 
+class Entry extends React.Component{
 
-const Entry = () => {
-    <Provider store={store}>
+    constructor(props){
+        super(props);
+    }
 
-    </Provider>
+    render(){
+        return (
+            <Provider store={store}>
+                <App />
+            </Provider>
+        );
+    }
+
 }
 
 export default Entry;
