@@ -1,6 +1,6 @@
-import React from 'react';
+import {Component} from 'react-native';
 
-class App extends React.Component{
+class App extends Component{
 
     constructor(props){
         super(props);
