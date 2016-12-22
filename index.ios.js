@@ -4,9 +4,17 @@
  * @flow
  */
 
-import {
-  AppRegistry
-} from 'react-native';
+import React from 'react';
 import Entry from './app/entry';
+import {AppRegistry} from 'react-native'
 
-AppRegistry.registerComponent('AwesomeProject', () => Entry);
+export default class AwesomeProject extends React.Component {
+  render() {
+    return (
+      <Entry/>
+    );
+  }
+}
+
+
+AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
